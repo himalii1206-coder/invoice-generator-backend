@@ -21,7 +21,7 @@ const app: Application = express();
 // Middlewares
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    origin: 'https://inquisitive-duckanoo-52fa3d.netlify.app',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Company-Id'],
