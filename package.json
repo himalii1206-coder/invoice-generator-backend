@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "start": "node dist/index.js",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -46,6 +46,7 @@
     "jest": "^29.7.0",
     "prisma": "^6.0.0",
     "ts-jest": "^29.2.5",
+    "tsc-alias": "^1.9.4",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
